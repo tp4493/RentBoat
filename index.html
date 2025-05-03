@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Sailor Rent Boat - Best Deals and Prices to Rent a Boat</title>
+    <link rel="icon" href="assets/StamIcon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="The Sailor Rent Boat - Best Deals and Prices to Rent a Boat"
+    />
+    <meta
+      name="keywords"
+      content="boat, rent, sail, sea, ocean, travel, vacation, holiday, adventure, Crete, Greece, Heraklion, Hersonissos, Stalida"
+    />
+  </head>
+
+  <body>
+    <a
+      href="https://wa.me/+306949582989"
+      target="_blank"
+      class="whatsappbutton"
+    >
+      <img src="assets/whatsup.webp" alt="WhatsApp Button" />
+    </a>
+
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="#"
+              ><img src="assets/stamlogo.png" id="stamlogo" alt="logo"
+            /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Gallery</a></li>
+          <li><a href="#explore">FAQ</a></li>
+          <li><a href="#" id="open-contact">Contact</a></li>
+
+        </ul>
+        <button class="btn nav__btn">Book Now</button>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <p>Simple - Unique - Friendly</p>
+        <h1>Make Yourself a present<br />threw Our <span>Boats</span>.</h1>
+      </div>
+    </header>
+
+    <section class="section__container booking__container">
+      <div class="input__group">
+      <div class="input__group input__btn">
+     
+        <!-- Backdrop -->
+        <div class="backdrop" id="backdrop" onclick="toggleForm()"></div>
+
+        <script>
+          // JavaScript to toggle form and backdrop with fade effect
+          function toggleForm() {
+            const form = document.getElementById("contactForm");
+            const backdrop = document.getElementById("backdrop");
+
+            if (form.style.display === "none" || form.style.display === "") {
+              // Show the form and backdrop
+              form.style.display = "block";
+              backdrop.style.display = "block";
+              // Trigger fade-in by adding 'visible' class after a tiny delay
+              setTimeout(() => {
+                form.classList.add("visible");
+                backdrop.classList.add("visible");
+              }, 10); // Small delay ensures transition triggers
+            } else {
+              // Fade out by removing 'visible' class
+              form.classList.remove("visible");
+              backdrop.classList.remove("visible");
+              // Hide after transition ends
+              setTimeout(() => {
+                form.style.display = "none";
+                backdrop.style.display = "none";
+              }, 300); // Match the transition duration (0.3s)
+            }
+          }
+        </script>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.avif" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">The Best Adventures Begin on the Water!</h2>
+        <p class="section__description">
+          With a passion for premium vessels, tailored journeys, and effortless
+          reservations, our platform is committed to making every boater’s dream
+          voyage a reality—filled with confidence, thrill, and the open sea.
+        </p>
+        <div class="about__btn">
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container room__container">
+      <p class="section__subheader">OUR BOATS</p>
+      <h2 class="section__header">The Most Memorable trip Starts Here.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-1.jpg" alt="room" />
+            <div class="room__card__icons"></div>
+          </div>
+          <div class="room__card__details">
+            <h4>Luxury Boat</h4>
+            <p>
+              Travel in luxury with breathtaking ocean views from your private
+              boat.
+            </p>
+            <h5>Starting from <span>€40</span></h5>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-2.jpg" alt="room" />
+            <div class="room__card__icons"></div>
+          </div>
+          <div class="room__card__details">
+            <h4>Private Jet</h4>
+            <p>
+              Experience urban elegance and modern comfort in the heart of the
+              ocean.
+            </p>
+            <h5>Starting from <span>€50</span></h5>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-3.jpg" alt="room" />
+            <div class="room__card__icons"></div>
+          </div>
+          <div class="room__card__details">
+            <h4>Family boat travel</h4>
+            <p>
+              Spacious and inviting, perfect for creating cherished memories
+              with loved ones.
+            </p>
+            <h5>Starting from <span>€60</span></h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="contact_form">
+        <h1>Contact Ous</h1>
+        <p>
+          Feel free to contact us and we will get back to you as soon as we can.
+        </p>
+        <form action="mail.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject" />
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <p class="section__subheader">Photo Gallery</p>
+      <h1>Create unforgettable memories</h1>
+    
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/galery1.webp" alt="Photo 1"></div>
+          <div class="swiper-slide"><img src="assets/galery2.webp" alt="Photo 2"></div>
+          <div class="swiper-slide"><img src="assets/galery3.webp" alt="Photo 3"></div>
+          <div class="swiper-slide"><img src="assets/galery4.webp" alt="Photo 4"></div>
+          <div class="swiper-slide"><img src="assets/galery5.webp" alt="Photo 1"></div>
+          <div class="swiper-slide"><img src="assets/galery6.webp" alt="Photo 2"></div>
+          <div class="swiper-slide"><img src="assets/galery7.webp" alt="Photo 3"></div>
+          <div class="swiper-slide"><img src="assets/galery8.webp" alt="Photo 4"></div>
+          <div class="swiper-slide"><img src="assets/galery9.webp" alt="Photo 4"></div>
+          <!-- Add more slides -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <style>
+        .swiper {
+          width: 90%;
+          height: 400px; /* BIGGER height */
+          border-radius: 20px;
+          overflow: hidden;
+          margin: 30px auto;
+          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+        }
+    
+        .swiper-slide {
+          transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+    
+        .swiper-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+    
+        /* Make the slides on the sides a bit faded */
+        .swiper-slide-prev,
+        .swiper-slide-next {
+          transform: scale(0.9);
+          opacity: 0.5;
+        }
+    
+        /* Center slide is normal */
+        .swiper-slide-active {
+          transform: scale(1);
+          opacity: 1;
+        }
+      </style>
+    
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        effect: "slide",
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          }
+        },
+        
+      });
+      </script>
+    </section>
+
+    <section class="explore" id="explore">
+      <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+  
+        <div class="faq">
+          <button class="accordion">
+            How can I make a reservation?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            
+              <p>
+                Making a reservation is simple and flexible!<br><br>
+                You can choose the way that suits you best:<br><br>
+                <span style="font-weight: 1000;">• Contact Form:</span> Fill out our quick Contact Us form on the website, and we’ll get back to you shortly.<br><br>
+                <span style="font-weight: 1000;">• Direct Email:</span> Send us an email anytime at <a href="mailto:gstamathioudakis@gmail.com" style="text-decoration: underline; color: #0077cc;">gstamathioudakis@gmail.com</a> — we typically respond within a few hours.<br><br>
+                <span style="font-weight: 1000;">• WhatsApp:</span> For faster communication, you can reach us directly via WhatsApp by clicking the WhatsApp button on the site.<br><br>
+                We’re here to help you plan your perfect trip with ease!
+              </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            Is it safe to rent and operate the boats?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Absolutely! Your safety is our top priority.
+              All our boats are carefully maintained, inspected regularly, and equipped with the necessary safety equipment (life jackets, emergency gear, etc.).
+              Before departure, we also provide you with a full briefing and instructions to ensure you feel confident and safe during your trip.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            What happens if the weather is bad?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Your safety comes first.
+If the weather conditions are unsafe, we will either reschedule your booking for another day or offer you a full refund — your choice.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            What should I bring for my boat trip?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              We recommend bringing sunscreen, sunglasses, a hat, swimwear, towels, and a light jacket.
+Don’t forget your camera to capture the amazing views! Water and snacks are also a good idea.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            How early should I arrive before my booking time?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              We recommend arriving at least 15–20 minutes before your scheduled time.
+This allows time for a quick briefing, paperwork, and a smooth departure without any rush.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            Is fuel included in the rental price?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Fuel is usually charged separately based on the amount used during your trip.
+              Before setting off, we will explain everything clearly so there are no surprises when you return.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+  
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+  
+            var pannel = this.nextElementSibling;
+  
+            if (pannel.style.display === "block") {
+              pannel.style.display = "none";
+            } else {
+              pannel.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <!-- Quick Links -->
+          <div class="footer__col quick-links">
+            <h4>Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#service">Gallery</a></li>
+           
+            </ul>
+          </div>
+        
+        </div>
+    
+  <!-- Contact Us -->
+        <section>
+          <div class="footer__col contact-us">
+            <h4>Contact Us</h4>
+            <ul class="footer__links">
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:gstamathioudakis@gmail.com">gstamathioudakis@gmail.com</a></li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+306945354884">+30 6945 354884</a></li>
+              <li><i class="fa-solid fa-phone"></i> <a href="#" id="open-contact">Contact Form</a></li>
+            </ul>
+            <div class="footer__socials">
+              <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+              <a href="https://www.instagram.com/the_sailor_rentboat?igsh=YXdjMGt6aHN5dm9t" target="_blank"><img src="assets/instagram.png" alt="instagram" /></a>
+              <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+              <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+            </div>
+          </div>
+        </section>
+ <!-- Find Us / Map -->
+        <div class="footer__col find-us">
+          <h4>Find Us</h4>
+          <p>Heraklion & Stalida, Crete - Greece</p>
+          <p>Let's sail together and create unforgettable memories!</p>
+        </div>
+        <!-- Map Section -->
+        <section class="map__section">
+          <div class="map__container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12573.042926409783!2d25.40854415!3d35.29443125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a644d414e2e7d%3A0x7c4aef529a6d08aa!2sStalida%2C%20Greece!5e0!3m2!1sen!2sgr!4v1714335396783!5m2!1sen!2sgr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+      </div>
+    
+      <!-- Footer Bar -->
+      <div class="footer__bar">
+        © 2025
+        <a href="https://karpadu.com/contact-us?utm_source=StamathioudakisRentBoat" target="_blank" rel="noopener noreferrer">
+          Karpadu Developments
+        </a>. All rights reserved.
+      </div>
+    </footer>
+    
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+    <!-- Backdrop and Modal hidden initially -->
+    <div class="contact-backdrop" id="contact-backdrop"></div>
+
+    <div class="contact-modal" id="contact-modal">
+      <button class="close-btn" id="close-btn">×</button>
+      <h2>Contact Us</h2>
+      <form id="form" autocomplete="off">
+        <input
+          type="hidden"
+          name="access_key"
+          value="0c0e515e-abb2-4d0e-ad4c-777e2ce33052"
+        />
+
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text"  name="date"  placeholder="dd/mm/yyyy" required />
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#date", {
+    dateFormat: "d/m/Y",
+    allowInput: true, //  επιτρέπει πληκτρολόγηση
+  });
+</script>
+        <select name="time" required>
+          <option value="" disabled selected>Select Time</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="14:00">2:00 PM</option>
+          <option value="16:00">4:00 PM</option>
+          <option value="18:00">6:00 PM</option>
+        </select>
+        <input type="tel" name="phone" placeholder="Phone" />
+        <textarea name="message" placeholder="Message" rows="4"></textarea>
+
+        <input type="submit" value="Send" />
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build and distribution files
+build/
+dist/
+dist-ssr/
+out/
+
+# Temporary files and directories
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sublime-*
+*.DS_Store
+
+# Package manager files
+.pnp
+.pnp.js
+.vscode-test/
+
+# Testing and coverage outputs
+coverage/
+*.lcov
+.nyc_output/
+
+# Debugging artifacts
+*.stackdump
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.Spotlight-V100
+*.Trashes
+._*
+
+# IDE and editor-specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vs/
+
+# Azure-specific artifacts
+*.publish-settings
+*.publish.xml
+
+# Miscellaneous
+.envrc
+.env.bak
+*.bak
+*.seed
+*.pid
+/frontend/src/index.css
